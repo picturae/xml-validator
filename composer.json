@@ -1,0 +1,33 @@
+{
+  "name": "picturae/xml-validator",
+  "description": "Php xml validator which allows validation of DOMDocument against multiple schemas",
+  "license": "GPLv3",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/picturae/licenser.git"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Picturae",
+      "email": "info@picturae.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Picturae\\XmlValidator\\": "src"
+    }
+  },
+  "require": {
+    
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "bash contrib/setup.sh"
+    ]
+  }
+}
