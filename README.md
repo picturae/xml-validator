@@ -1,2 +1,2 @@
 # xml-validator
-Php xml validator which allows validation of DOMDocument against multiple schemas
+Validator which allows validation of DOMDocument against multiple schemas which are contained in it.
