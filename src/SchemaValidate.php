@@ -43,6 +43,10 @@ class SchemaValidate
     {
         $allSchemas = self::extractAllSchemas($document);
         
+        // @TODO By extracting all schemas we do not keep in mind the hierarchy
+        // and for which specific elements the schemas are included.
+        // This has to be fixed by validating element by element.
+        
         if (empty($allSchemas)) {
             throw new Exception(
                 'No schemas found in the xml.'
